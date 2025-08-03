@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --darkBlue: hsl(217, 28%, 15%);
+  --darkBlue1: hsl(218, 28%, 13%);
+  --darkBlue2: hsl(216, 53%, 9%);
+  --darkBlue3: hsl(219, 30%, 18%);
+  --accentCyan: hsl(176, 68%, 64%);
+  --accentBlue: hsl(198, 60%, 50%);
+  --lightRed: hsl(0, 100%, 63%);
+
+  /* Fonts */
+  --font-sans: "Raleway", sans-serif;
+  --font-opensans: "Open Sans", sans-serif;
+}
+
+.ficon:hover {
+  filter: brightness(0) saturate(100%) invert(75%) sepia(16%) saturate(6849%)
+    hue-rotate(38deg) brightness(104%) contrast(83%);
+  cursor: pointer;
+  scale: 1.2;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkySync</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="dark:bg-slate-800 dark:text-white">
+    <!-- Header -->
+    <header
+      class="flex flex-col md:flex-row justify-between items-center mx-6 my-4 space-y-8"
+    >
+      <div
+        class="bg-[url(../images/logo-dark.png)] dark:bg-[url(../images/logo-light.png)] bg-no-repeat bg-contain h-20 w-48"
+      ></div>
+      <div class="flex space-x-6 md:space-x-10 justify-center items-center">
+        <button
+          class="text-2xl font-serif dark:hover:text-emerald-300 hover:text-violet-500"
+        >
+          Features
+        </button>
+        <button
+          class="text-2xl font-serif dark:hover:text-emerald-300 hover:text-violet-500"
+        >
+          Testimonials
+        </button>
+        <div id="toggleTheme">
+          <button class="p-1 hidden dark:block cursor-pointer">
+            <img src="./images/light.svg" class="w-5" alt="" />
+          </button>
+          <button class="p-1 dark:hidden cursor-pointer">
+            <img src="./images/dark.svg" class="w-5" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="bg-[url(../images/bg-curvy-light-mode.svg)] dark:bg-[url(../images/bg-curvy-dark-mode.svg)] bg-no-repeat bg-contain bg-bottom"
+    >
+      <div class="container mx-auto px-6 text-center pt-5 md:-mt-20 pb-52">
+        <img src="./images/heroImg.png" alt="" class="mx-auto" />
+        <h1
+          class="max-w-2xl mx-auto mb-10 leading-normal mt-14 dark:text-white text-3xl font-bold font-serif md:text-4xl"
+        >
+          All your files in one secure location, accessible anywhere.
+        </h1>
+        <p
+          class="text-sm max-w-sm mx-auto mb-10 md:max-w-xl md:text-lg dark:text-white"
+        >
+          SkySync stores all your most important files in one secure location.
+          Access them whenever you need, share and collaborate with friends
+          family, and co-workers.
+        </p>
+        <button
+          class="px-4 py-2 font-extrabold font-mono bg-emerald-300 hover:bg-emerald-400 dark:bg-violet-500 dark:hover:bg-violet-600 hover:scale-95 hover:cursor-pointer rounded-2xl duration-200"
+        >
+          Get Started
+        </button>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section
+      id="features"
+      class="bg-gray-50 dark:bg-[rgba(27,27,37,0.78)] mb-30"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 justify-center items-center text-center mx-20 space-y-20 p-10"
+      >
+        <div class="flex flex-col justify-center items-center space-y-4">
+          <img src="./images/icon-access-anywhere.svg" alt="" />
+          <h4 class="text-xl font-bold font-serif">
+            Access your file from anywhere
+          </h4>
+          <p class="max-w-md">
+            The ability to use a smartphone, tablet, or computer to access your
+            account means your files follow you everywhere.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center space-y-4">
+          <img src="./images/icon-security.svg" alt="" />
+          <h4 class="text-xl font-bold font-serif">Security you can trust</h4>
+          <p class="max-w-md">
+            2-factor authentication and user-controlled encrypton are just a
+            couple of the security features we allow to help secure your files.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center space-y-4">
+          <img src="./images/icon-collaboration.svg" alt="" />
+          <h4 class="text-xl font-bold font-serif">
+            Share your file from anywhere
+          </h4>
+          <p class="max-w-md">
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center space-y-4">
+          <img src="./images/icon-any-file.svg" alt="" />
+          <h4 class="text-xl font-bold font-serif">Files Encryption</h4>
+          <p class="max-w-md">
+            Whether you're sharing holidays photos or work documents. SkySync
+            has you covered allowing for all file types to be securely stored
+            and shared.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productive secction -->
+    <section id="productive">
+      <div
+        class="container flex flex-col items-center mx-auto px-6 pt-24 pb-32 md:flex-row md:space-x-16"
+      >
+        <div class="md:w-1/2">
+          <img
+            src="./images/illustration-stay-productive.png"
+            alt=""
+            class="mb-10"
+          />
+        </div>
+
+        <div class="flex flex-col items-start md:w-1/2">
+          <div class="flex flex-col space-y-5">
+            <h4 class="max-w-md text-xl font-bold font-serif md:text-4xl">
+              Stay productive,wherever you are
+            </h4>
+            <p class="text-md md:text-lg">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="text-md md:text-lg">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+          </div>
+
+          <!-- Link -->
+          <div class="block mt-4">
+            <a
+              href=""
+              class="border-b border-emerald-500 text-emerald-500 dark:border-emerald-300 dark:text-emerald-300"
+              >See how SkySync Works
+              <img src="./images/icon-arrow.svg" class="inline pb-2" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
