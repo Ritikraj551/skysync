@@ -14,9 +14,40 @@
   --font-opensans: "Open Sans", sans-serif;
 }
 
+.ficon {
+  transition: all 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ficon:hover {
+    filter: invert(66%) sepia(43%) saturate(720%) hue-rotate(103deg)
+      brightness(95%) contrast(85%);
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .ficon:hover {
+    filter: invert(29%) sepia(90%) saturate(707%) hue-rotate(240deg)
+      brightness(93%) contrast(92%);
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+}
+
+.ficon {
+  transition: all 0.3s ease;
+}
+
 .ficon:hover {
-  filter: brightness(0) saturate(100%) invert(75%) sepia(16%) saturate(6849%)
-    hue-rotate(38deg) brightness(104%) contrast(83%);
+  filter: invert(29%) sepia(90%) saturate(707%) hue-rotate(240deg)
+    brightness(93%) contrast(92%);
+  transform: scale(1.2);
   cursor: pointer;
-  scale: 1.2;
+}
+
+.dark .ficon:hover {
+  filter: invert(66%) sepia(43%) saturate(720%) hue-rotate(103deg)
+    brightness(95%) contrast(85%);
 }

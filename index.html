@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="dark scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,16 +15,18 @@
         class="bg-[url(../images/logo-dark.png)] dark:bg-[url(../images/logo-light.png)] bg-no-repeat bg-contain h-20 w-48"
       ></div>
       <div class="flex space-x-6 md:space-x-10 justify-center items-center">
-        <button
+        <a
+          href="#features"
           class="text-2xl font-serif dark:hover:text-emerald-300 hover:text-violet-500"
         >
           Features
-        </button>
-        <button
+        </a>
+        <a
+          href="#testimonials"
           class="text-2xl font-serif dark:hover:text-emerald-300 hover:text-violet-500"
         >
           Testimonials
-        </button>
+        </a>
         <div id="toggleTheme">
           <button class="p-1 hidden dark:block cursor-pointer">
             <img src="./images/light.svg" class="w-5" alt="" />
@@ -66,7 +68,7 @@
     <!-- Features Section -->
     <section
       id="features"
-      class="bg-gray-50 dark:bg-[rgba(27,27,37,0.78)] mb-30"
+      class="bg-gray-100 dark:bg-[rgba(27,27,37,0.78)] mb-30"
     >
       <div
         class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 justify-center items-center text-center mx-20 space-y-20 p-10"
@@ -111,7 +113,7 @@
       </div>
     </section>
 
-    <!-- Productive secction -->
+    <!-- Productive section -->
     <section id="productive">
       <div
         class="container flex flex-col items-center mx-auto px-6 pt-24 pb-32 md:flex-row md:space-x-16"
@@ -143,7 +145,7 @@
           <div class="block mt-4">
             <a
               href=""
-              class="border-b border-emerald-500 text-emerald-500 dark:border-emerald-300 dark:text-emerald-300"
+              class="border-b border-emerald-500 text-emerald-500 dark:border-emerald-300 dark:text-emerald-300 hover:text-violet-500 hover:border-violet-500"
               >See how SkySync Works
               <img src="./images/icon-arrow.svg" class="inline pb-2" alt=""
             /></a>
@@ -151,6 +153,186 @@
         </div>
       </div>
     </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonials">
+      <div class="container mx-auto px-6 pt-12 pb-80 md:pb-96">
+        <div
+          class="relative flex flex-col md:flex-row w-full space-y-6 md:space-y-0 md:space-x-12"
+        >
+          <img
+            src="./images/bg-quotes.png"
+            class="absolute left-1 -top-2 w-10 md:-top-16 md:w-20"
+            alt=""
+          />
+          <!-- Box-1 -->
+          <div class="rounded-lg p-6 bg-gray-200 dark:bg-slate-700 space-y-4">
+            <p>
+              SkySync has improved our team productivity by an order of
+              magnitude. Since making the switch our team has become a
+              well-oiled collaboration machine.
+            </p>
+            <div class="flex gap-2">
+              <img
+                src="./images/profile-1.jpg"
+                class="rounded-full w-10 h-10"
+                alt=""
+              />
+              <div>
+                <h5 class="text-sm font-bold">Vikas Patel</h5>
+                <p class="text-xs">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box-2 -->
+          <div class="rounded-lg p-6 bg-gray-200 dark:bg-slate-700 space-y-4">
+            <p>
+              SkySync has improved our team productivity by an order of
+              magnitude. Since making the switch our team has become a
+              well-oiled collaboration machine.
+            </p>
+            <div class="flex gap-2">
+              <img
+                src="./images/profile-2.jpg"
+                class="rounded-full w-10 h-10"
+                alt=""
+              />
+              <div>
+                <h5 class="text-sm font-bold">John Kimberly</h5>
+                <p class="text-xs">Founder & CEO, Huddle2</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box-3 -->
+          <div class="rounded-lg p-6 bg-gray-200 dark:bg-slate-700 space-y-4">
+            <p>
+              SkySync has improved our team productivity by an order of
+              magnitude. Since making the switch our team has become a
+              well-oiled collaboration machine.
+            </p>
+            <div class="flex gap-2">
+              <img
+                src="./images/profile-3.jpg"
+                class="rounded-full w-10 h-10"
+                alt=""
+              />
+              <div>
+                <h5 class="text-sm font-bold">Sara Mathew</h5>
+                <p class="text-xs">Founder & CEO, Huddle3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Early Access Section -->
+    <section
+      id="earlyAccess"
+      class="relative px-6 md:px-0 bg-gray-400 dark:bg-gray-900"
+    >
+      <div
+        class="relative -top-40 flex flex-col justify-center items-center space-y-4 max-w-4xl bg-gray-200 dark:bg-slate-950 rounded-xl p-8 mx-auto"
+      >
+        <h3 class="text-2xl font-bold font-serif">Get early access today</h3>
+        <p class="text-sm mx-auto md:text-lg dark:text-white">
+          It only takes a minute to sign up and our free starter tier is
+          extremely generous. If you have any questions, our support team would
+          be happy to help you.
+        </p>
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-4 w-full"
+        >
+          <input
+            type="text"
+            placeholder="email@example.com"
+            class="px-4 py-2 bg-gray-50 dark:bg-white text-gray-500 font-semibold rounded-xl w-full"
+          />
+          <button
+            class="md:w-xs w-full px-4 py-2 font-extrabold font-mono bg-emerald-300 hover:bg-emerald-400 dark:bg-violet-500 dark:hover:bg-violet-600 hover:scale-95 hover:cursor-pointer rounded-2xl duration-200"
+          >
+            Get Started For Free
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white bg-slate-800">
+      <div class="container flex-col md:flex-row mx-auto px-5 pb-10">
+        <!-- All items container -->
+        <div
+          class="flex flex-col md:flex-row justify-between space-y-24 md:space-y-0 pt-10"
+        >
+          <!-- Email Phone -->
+          <div class="flex flex-col md:space-y-2 justify-start">
+            <div class="flex items-center gap-2">
+              <img src="./images/icon-phone.svg" alt="" class="w-4 h-4" />
+              <p>+91-1234567895</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <img src="./images/icon-email.svg" alt="" class="w-4 h-4" />
+              <p>example@skysync.com</p>
+            </div>
+          </div>
+
+          <!-- Menus -->
+          <div class="grid md:grid-cols-2 md:grid-rows-4 md:space-x-8">
+            <a href="" class="dark:hover:text-emerald-300 hover:text-violet-500"
+              >About Us</a
+            >
+            <a href="" class="dark:hover:text-emerald-300 hover:text-violet-500"
+              >Jobs</a
+            >
+            <a href="" class="dark:hover:text-emerald-300 hover:text-violet-500"
+              >Press</a
+            >
+            <a href="" class="dark:hover:text-emerald-300 hover:text-violet-500"
+              >Blog</a
+            >
+            <a href="" class="dark:hover:text-emerald-300 hover:text-violet-500"
+              >Contact Us</a
+            >
+            <a href="" class="dark:hover:text-emerald-300 hover:text-violet-500"
+              >Terms</a
+            >
+            <a href="" class="dark:hover:text-emerald-300 hover:text-violet-500"
+              >Privacy</a
+            >
+          </div>
+
+          <!-- Social -->
+          <div class="flex justify-center pb-10 space-x-3">
+            <div>
+              <a href=""
+                ><img
+                  src="./images/facebook.svg"
+                  alt=""
+                  class="p-2 bg-slate-500 rounded-full ficon"
+              /></a>
+            </div>
+            <div>
+              <a href=""
+                ><img
+                  src="./images/instagram.svg"
+                  alt=""
+                  class="p-2 bg-slate-500 rounded-full ficon"
+              /></a>
+            </div>
+            <div>
+              <a href=""
+                ><img
+                  src="./images/icon-twitter.svg"
+                  alt=""
+                  class="w-10 h-10 p-2 bg-slate-500 rounded-full ficon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./js/script.js"></script>
   </body>
 </html>
